@@ -1,4 +1,4 @@
-# Foli MCP Server (unofficial)
+# Föli MCP Server (unofficial)
 
 A lightweight MCP server that wraps the FOLI open API, allowing me to use it with my LLM applications (eg. Claude Desktop) and prompt questions such as upcoming bus schedules.
 
@@ -52,6 +52,15 @@ A lightweight MCP server that wraps the FOLI open API, allowing me to use it wit
 ```
 3. Restart Claude Desktop
 4. Example prompt: `What are the next busses leaving from stop 4?`
+
+## Integration with OpenWeb UI
+
+Integration with OpenWeb UI requires an additional step for the MCP proxy.
+
+1. Follow the instructions for installing the MCP proxy here https://docs.openwebui.com/openapi-servers/mcp
+2. Start the proxy for the mcp server: `uvx mcpo --port 8000 -- node /ABSOLUTE/PATH/TO/foli_mcp_server/build/server.js`
+3. Connect the proxy to OpenWeb UI Tools server (see: https://docs.openwebui.com/openapi-servers/open-webui#step-2-connect-tool-server-in-open-webui)
+4. Use your favourite LLM model and start prompting to ask for bus schedules
 
 ## Contributing
 
