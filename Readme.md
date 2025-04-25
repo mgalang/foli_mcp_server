@@ -15,7 +15,7 @@ A lightweight MCP server that wraps the FOLI open API, allowing me to use it wit
 
 1. Clone the repository:
   ```bash
-  git clone https://github.com/yourusername/foli_mcp_server.git
+  git clone https://github.com/mgalang/foli_mcp_server.git
   cd foli_mcp_server
   ```
 
